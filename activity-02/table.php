@@ -10,12 +10,12 @@
     <?php
         $products = array
             (
-                array("name"=>"Product A", "price"=>10.50, "stock"=>12),
-                array("name"=>"Product B", "price"=>5.60, "stock"=>7),
-                array("name"=>"Product C", "price"=>7.00, "stock"=>5),
-                array("name"=>"Product D", "price"=>15.20, "stock"=>10),
-                array("name"=>"Product E", "price"=>12.40, "stock"=>23),
-                array("name"=>"Product F", "price"=>4.30, "stock"=>3)
+                array("name"=>"Apple", "price"=>10.50, "stock"=>12),
+                array("name"=>"Banana", "price"=>5.60, "stock"=>7),
+                array("name"=>"Grape", "price"=>7.00, "stock"=>5),
+                array("name"=>"Watermelon", "price"=>15.20, "stock"=>10),
+                array("name"=>"Pineapple", "price"=>12.40, "stock"=>23),
+                array("name"=>"Blueberry", "price"=>4.30, "stock"=>3)
             );
     ?>
     <h1 class="title_table">Dynamic Table</h1> 
@@ -61,3 +61,4 @@
 </body>
 
 </html>
+
