@@ -1,0 +1,110 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #fefefa;   
+}
+
+.title_table
+{
+    padding-left: 250px;
+    font-weight: 400;
+    margin-top: 50px;
+    text-align: center;
+    transition: padding-right 0.65s ease-out, padding-left 0.65s ease-out;
+    white-space: nowrap;
+}
+
+.title_table:hover
+{
+    padding-left: 0px;
+    padding-right: 525px;
+    transition: 0.65s ease-in-out;
+}
+
+.title_table:after
+{
+    opacity: 0;
+    content: " by Benedict Lorenzo";
+    transition: 0.25s ease-out;
+}
+
+.title_table:hover:after
+{
+    opacity: 1;
+    content: " by Benedict Lorenzo";
+    transition: 0.75s ease-in;
+}
+
+table
+{
+    width: 100%;
+    max-width: 1000px;
+
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: auto;
+
+    border-collapse: collapse;
+    border: 5px inset #cacaca;
+    transition: margin-top 0.250s ease-in-out;
+}
+
+table tr
+{
+    background: #d0d0d0;
+}
+
+tr th
+{
+    background: #aaaaaa;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    /* increase column text weight*/
+    font-weight: 700;
+    font-size: 1.25rem;
+
+    border-bottom: 2px solid black;
+}
+
+tr td
+{
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:not(:has(span.warning)) td
+{
+    text-decoration: none;
+    transition: background 0.350s ease-in-out, 
+    text-decoration 0.350s ease-in-out;
+}
+
+tr:not(:has(span.warning)):hover td
+{
+    background: #fefefefe;
+    text-decoration: underline;
+}
+
+tr:has(span.warning) td
+{
+    background: rgb(231, 54, 54);
+    text-decoration: none;
+    transition: background 0.350s ease-in-out, 
+    text-decoration 0.350s ease-in-out;
+}
+
+tr:has(span.warning):hover td
+{
+    background: #ffa883fe;
+    text-decoration: underline;
+}
